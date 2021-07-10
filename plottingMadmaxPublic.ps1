@@ -32,7 +32,7 @@ for ($i = 1; $i -le $maxNumberOfPlots; $i++) {
 	} While ($processCount -eq $maxNumberOfParallelPlots)
 	
 	# Neuen Plot-Prozess starten
-    	#Start-Process -FilePath powershell.exe -ArgumentList "C:\<pfad zu madmax plotter>\chia_plot.exe -n 1 -t F:\ -2 F:\ -d L:\ -c <contract> -f <farmerkey>"
+    	Start-Process -FilePath powershell.exe -ArgumentList "C:\<pfad zu madmax plotter>\chia_plot.exe -n 1 -t F:\ -2 F:\ -d L:\ -c <contract> -f <farmerkey>"
 
     	# Ausgabe in PS
 	"$date - $minMinutesBetweenPlots Minuten warten bis der nächste Plot gestartet wird"
